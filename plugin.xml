@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
+	    <launchConfigurationType
+	        name="Bukkit Server"
+	        delegate="ca.hume.tristan.eclipsebukkitrun.BukkitLaunchConfigurationDelegate"
+	        modes="run, debug"               
+	        id="ca.hume.tristan.eclipsebukkitrun.bukkitServer">        
+	    </launchConfigurationType>
+	</extension>
+	<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+	    <launchConfigurationTypeImage
+	        icon="res/bukkit_icon.gif"
+	        configTypeID="ca.hume.tristan.eclipsebukkitrun.bukkitServer"
+	        id="ca.hume.tristan.eclipsebukkitrun.ui.launchConfigurationTypeImage.bukkitServer">
+	    </launchConfigurationTypeImage>
+	</extension>
+	<extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+	    <launchConfigurationTabGroup
+	        type="ca.hume.tristan.eclipsebukkitrun.bukkitServer"
+	        class="ca.hume.tristan.eclipsebukkitrun.ui.BukkitTabGroup"
+	        id="ca.hume.tristan.eclipsebukkitrun.ui.launchConfigurationTabGroup.bukkitServer">
+	    </launchConfigurationTabGroup>
+	</extension>
+</plugin>
